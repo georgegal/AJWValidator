@@ -210,6 +210,11 @@ NSString * const AJWValidatorRegularExpressionPatternContainsNumber = @".*\\d.*"
     [self raiseIncompatibilityException];
 }
 
+#pragma mark Remove Rules
+- (void)removeAllRules {
+    [self.rules removeAllObjects];
+}
+
 #pragma mark Incompatible Rules
 
 - (void)raiseIncompatibilityException

@@ -253,6 +253,11 @@ extern NSString * const AJWValidatorRegularExpressionPatternContainsNumber;
 - (void)addValidationToEnsureStringContainsNumberWithInvalidMessage:(NSString *)message;
 
 /**
+ *  Remove all validation rules from Validator
+ */
+- (void)removeAllRules;
+
+/**
  *  Validates the instance and changes the state property
  *
  *  @param instance instance to validate (typically a user input)
@@ -283,5 +288,7 @@ extern NSString * const AJWValidatorRegularExpressionPatternContainsNumber;
  *  @return YES for valid, no otherwise
  */
 - (BOOL)isValid;
+
+
 
 @end
